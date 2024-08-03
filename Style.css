@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #232323;
+    /* background-blend-mode: darken; */
+}
+
+.main-page{
+    margin: 0;
+    height: 100dvh;
+    background-image: url(./Src/Background-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-page .overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.main-page .overlay .signin{
+    position: absolute;
+    margin-top: 40px;
+    left: 90%;
+    border: 0.25em ;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    vertical-align: text-top;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2.5rem;
+    background: red;
+    color: white;
+    transition: inherit;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0.25rem 1rem
+}
+.main-page .overlay .translate{
+    position: absolute;
+    width: auto;
+    margin-top: 40px;
+    font-size: larger;
+    left: 80%;
+    min-height: 6%;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    padding: 0.25rem 1rem;
+    background:rgba(22, 22, 22, 0.7);
+    color: white;
+}
+
+.main-page .overlay .logo {
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 10.5625rem;
+    height: 2.7rem;
+}
+
+.text{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%, -40%);
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.text h1{
+    font-size:48px ;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text p{
+    font-size: 24px;
+    text-align: center;
+    margin: 16px 0px 0px;
+}
+.text h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.button{
+    position:absolute;
+    margin-left: 2.5em;
+    top: 60%;
+    left: 55%;
+    color: white;
+    font-weight: 500;
+    height: 50px;
+    background-color: rgb(255, 22, 33);
+    width: 200px;
+    border: none;
+    border-radius: 0.25em;
+    transition: background-color 0.5s;
+}
+
+.button:hover{
+    background-color: rgb(193, 17, 25);
+    cursor: pointer;
+}
+
+
+#email{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    height: 50px;
+    width: 400px;
+    padding: var(--padding);
+    background:rgba(22, 22, 22, 0.7);
+    border: rgba(128, 128, 128, 0.7) 1px solid;
+    border-radius: 0.25em;
+}
+input[type=email]{
+    color:white;
+}
+
+#email::placeholder{
+    /* margin-left: 3px; */
+    font-size: 16px;
+    /* top: 62.5%;
+    right: 63%; */
+    padding-left: 10px;
+    position: absolute;
+    /* padding: 0 4px; */
+    transition: all 0.2s ease-in;
+    color: whitesmoke;
+}
+
+.ruling{
+    margin: 0;
+    background-color: #272829;
+    height: 7px;
+    border: 0;
+}
+.second-page{
+    background-color: black;
+    color: white;
+    height: 80dvh;
+    width: auto;
+}
+.second-page-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.second-page-main img{
+    width: 600px;
+    height: auto;
+    z-index: 1;
+    left: 50%;
+}
+.second-page-main .animation{
+    width: 465px; 
+    position: absolute;
+    left: 58.5%;
+}
+.second-page-text h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.second-page-text p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.third-page{
+    background-color: black;
+    color: white;
+    height: 80dvh;
+    width: auto;
+}
+.third-page-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.third-page-main img{
+    width: 600px;
+    height: auto;
+}
+.third-page-text h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.third-page-text p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.fourth-page{
+    background-color: black;
+    color: white;
+    height: 80dvh;
+    width: auto;
+}
+.fourth-page-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.fourth-page-main img{
+    width: 600px;
+    height: auto;
+    z-index: 1;
+}
+.fourth-page .animation2{
+    position: absolute;
+    left: 61%;
+    width:366px;
+    height: auto;
+    margin-bottom: 150px;
+}
+.fourth-page-text h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.fourth-page-text p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.fifth-page{
+    background-color: black;
+    color: white;
+    height: 90dvh;
+    width: auto;
+}
+.fifth-page-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.fifth-page-main img{
+    width: 600px;
+    height: auto;
+}
+.fifth-page-text h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.fifth-page-text p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.Questions{
+    padding: 5px;
+    padding-bottom:auto ;
+    background: black;
+}
+.faq{
+    position: relative;
+    margin: 10px 70px;
+    background-color: black;
+}
+.faqheading{
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.faq .faqinside{
+    margin-top: -10px;
+    position: relative;
+    align-items: center;
+    background: #272829FF;
+    width: 100%;
+    text-align: left;
+    color: white ;
+    border: 0;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+.faq .faqinside::before{
+    content: url("./Src/plus.png");
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+.faq .slide{
+    margin-top: 1px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    align-items: center;
+    background: #272829;
+    width: 100%;
+    text-align: left;
+    color: white ;
+    border: 0;
+    box-sizing: content-box;
+    height: 0;
+    padding-left: 12px;
+    overflow: hidden;
+    transition: height  0.5s;
+    overflow-y:hidden;
+}
+.faqinside p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.faq .slide.active{
+    height: 150px;
+    padding: 6px;
+}
+
+.faq :hover{
+    background-color: #414141;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 30dvh;
+    width: auto;
+    padding-top: 50px;
+}
+.footer-lists{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-lists ul{
+    list-style: none;
+}
+.footer-lists ul li{
+    color: white;
+}
+.footer-lists ul li a{
+    text-decoration: none;
+    color: white;
+}
